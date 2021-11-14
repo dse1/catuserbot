@@ -56,7 +56,30 @@ kettuet = [
 @catub.cat(admin_cmd(pattern="كت(?: |$)(.*)"))
 async def permalink(mention):
     iqt = random.choice(kettuet)
-    await edit_or_reply(mention, f"**- {iqt} **")
+    await edit_or_reply(mention, f"**- {iqt} 
+                        
+                        
+                        
+                        
+                        
+                        
+                        @catub.cat_cmd(
+    pattern="كت$",
+    command=("كت", plugin_category),
+    info={
+        "header": "Source code link of userbot",
+        "usage": [
+            "{tr}repo",
+        ],
+    },
+)
+async def source(e):
+    "Source code link of userbot"
+    await edit_or_reply(
+        e,
+        "Click [here](https://github.com/sandy1709/catuserbot) to open this bot source code\
+        \nClick [here](https://github.com/Mr-confused/nekopack) to open supported link for heroku",
+    )
     
     
   
