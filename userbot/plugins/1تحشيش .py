@@ -9,7 +9,7 @@ from ..helpers import get_user_from_event
 plugin_category = "utils"
 
 
-@jmthon.ar_cmd(
+@catub.cat_cmd(
     pattern="كت(?:\s|$)([\s\S]*)",
     command=("كت", plugin_category),
 )
